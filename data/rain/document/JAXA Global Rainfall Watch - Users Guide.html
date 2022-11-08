@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JAXA Global Rainfall Watch - Users Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Keywords" content="" />
+<script language="javascript" type="text/javascript" src="common/jquery-1.9.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="common/simplelib.min.js?rollOver"></script>
+<link href="common/style_v2.css" rel="stylesheet" type="text/css" media="all" />
+<link href="common/menubar.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" href="http://sharaku.eorc.jaxa.jp/GSMaP/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="http://sharaku.eorc.jaxa.jp/GSMaP/favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+<body>
+
+<!-- ****************ヘッダ**************** -->
+<div id="headerWrapper">
+
+<div id="header">
+  <a href="index.htm"><img src="img/header_GSMaP_Logo.png" alt="GSMaP" width="275" height="90" class="logo" /></a>
+
+  <h1><a href="index.htm"><img src="img/header_title_E.png" alt="JAXA Global Rainfall Watch" width="580" class="title" style='margin-top:10px;'/></a></h1>
+  
+  <ul id="info">
+    <li><a class="button" href="guide_j.html"><img src="img/header_btn_japanese.png" alt="日本語" /></a></li>
+  </ul>
+  
+</div>
+
+</div>
+
+
+
+
+<!-- ****************ボディ**************** -->
+<div id="bodyWrapper">
+
+<div id="body" class="clearfix">
+
+
+  <div id="lNavi">
+    <h2>Users Guide</h2>
+    <ol>
+      <li value="1"><a href="#01">Introduction</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>1.1.<a href="#01a">What is the Global Satellite Mapping of Precipitation (GSMaP)?</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>1.2.<a href="#01b">Features of the JAXA Rainfall Watch website series</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>1.3.<a href="#01c">History of the GSMaP development</a></li>
+      <li value="2"><a href="#02">Description of rainfall data</a></li>
+      <li value="3"><a href="#03">GSMaP Utilization</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>3.1.<a href="#03a">Monitor the rainfall using the JAXA Global Rainfall Watch website</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>3.2.<a href="#03b">Using Image of the GSMaP rainfall</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>3.3.<a href="#03c">Analyzing  data</a></li>
+      <li value="4"><a href="#04">Various GSMaP websites</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>4.1.<a href="#04a">JAXA Global Rainfall Watch</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>4.2.<a href="#04b">JAXA Realtime Rainfall Watch (GSMaP_NOW)</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>4.3.<a href="#04c">JAXA Climate Rainfall Watch (GSMaP_CLM)</a></li>
+       <li style='list-style-type:none;text-indent:-2.0em;padding-left:1.0em;'>4.4.<a href="#04d">GSMaP RIKEN Nowcast (GSMaP_RNC)</a></li>
+      <li value="5"><a href="#05">Algorithm inputs</a></li>
+      <li value="6"><a href="#06">FAQ</a></li>
+      <li value="7"><a href="#07">Some caveats for data users</a></li>
+      <li value="8"><a href="#08">Links</a></li>
+      <li value="9"><a href="#09">Acknowledgments</a></li>
+      <li value="10"><a href="#10">Papers describing the GSMaP project</a></li>
+    </ol>
+    
+  </div>
+  
+
+  <div id="mainCol">
+  
+    <p align="right">Updated March 1th, 2021</p>
+      
+    <h2>1. Introduction</h2>
+    <h2 id="01a">1.1. What is the Global Satellite Mapping of Precipitation (GSMaP)?</h2>
+    <p><b>GSMaP</b> has multi-satellite global precipitation map under the <a href="https://www.eorc.jaxa.jp/GPM/en/index_e.html" target="_blank">Global Precipitation Measurement (GPM) Mission</a>, by using Dual-frequency Precipitation Radar (DPR) onboard GPM core satellites, other GPM constellation satellites, and Geostationary satellites. This website <b>offers hourly global precipitation</b> information.</p>
+    <p>The main feature of the GSMaP algorithm is utilization of various attributes derived from the <b>spaceborne precipitation radar, TRMM/PR and GPM/DPR</b>.</p>
+    <p><b>Precipitation information by GSMaP has been widely used</b>, not only for scientific purposes, but also for meteorology, disaster preventions, climate monitoring, agricultural monitoring, public health, educations and so on. For specific examples, please see the <a href="http://www.eorc.jaxa.jp/GPM/doc/data_utilization/latest_jireishu_e.pdf" target="_blank">Utilization book</a>.</p>
+
+    <p style="text-align:center;"><img src="img/gsmap_schematic_e.png"></p>
+
+    <h2 id="01b">1.2. Features of the JAXA Rainfall Watch website series</h2>
+    <p>We offers some websites for various utilization purposes. Here is the quick introduction of the major websites.</p>
+    <p>
+      <table border="0">
+        <td width="75" height="75"><img src="./img/menubar/defo/GSMaP_HP_menubar_e_mid3.png"></td>
+        <td width="585" height="75">For users who would like to <b>monitor precipitation in realtime</b><br>
+                                    ...<a href="https://sharaku.eorc.jaxa.jp/GSMaP_NOW/index.htm" target="_blank">JAXA REALTIME RAINFALL WATCH</a><br>
+                                    You can see global precipitation map, updated <b>every 30 minutes</b>.</td>
+      </tr><tr>
+        <td width="75" height="75"><img src="./img/menubar/defo/GSMaP_HP_menubar_e_mid2.png"></td>
+        <td width="585" height="75">For users who would like to see <b>precipitation in the past specific date</b><br>
+                                    ...<a href="https://sharaku.eorc.jaxa.jp/GSMaP/index.htm" target="_blank">JAXA GLOBAL RAINFALL WATCH</a><br>
+                                    You can see hourly global precipitation map <b>since March 2000</b>.</td>
+      </tr><tr>
+        <td width="75" height="80"><img src="./img/menubar/defo/GSMaP_HP_menubar_e_mid4.png"></td>
+        <td width="585" height="80">For users who would like to see <b>daily or monthly precipitation</b><br>
+                                    ...<a href="https://sharaku.eorc.jaxa.jp/GSMaP_CLM/index.htm" target="_blank">JAXA CLIMATE RAINFALL WATCH</a><br>
+                                    You can see indices related to <b>extreme heavy rainfall and drought</b> as well as accumulated precipitation.</td>
+      </tr>
+      </table>
+    </p>
+    <p>Detailed explanation of the websites above and  other applicational GSMaP-related websites such as “GSMaP RIKEN Nowcast” and  “JAXA Realtime Weather Watch” are explained more in detail in <a href="#04">Section 4</a>.</p>
+
+    <h2 id="01c">1.3. History of the GSMaP development</h2>
+    <p>GSMaP is based on the heritage of the study "Production of a high-precision, high-resolution global precipitation map using satellite data," sponsored by Core Research for Evolutional Science and Technology (CREST) of the Japan Science and Technology Agency (JST) during 2002-2007.</p>
+    <p>Since 2007, GSMaP development has been promoted by the JAXA Precipitation Measuring Mission (PMM) Science Team. JAXA has been updating the algorithms to provide more accurate precipitation information.</p>
+    <p>Currently, the website displays precipitation estimated by using GPM-GSMaP Ver.6 algorithm developed by the Global Satellite Mapping of Precipitation (GSMaP) project, which is the same as the product distributed from <a href="https://gportal.jaxa.jp/gpr/?lang=en" target="_blank">G-Portal</a>.</p>
+
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="02">2. Description of rainfall data</h2>    
+    <dl class="dataOutlineE">
+      <dt>Variable</dt>
+      <dd>Rainfall rate (mm/hr)</dd>
+      <dt>Domain</dt>
+      <dd>Global (60N - 60S)</dd>
+      <dt>Grid resolution</dt>
+      <dd>0.1 degree latitude/longitude</dd>
+      <dt>Temporal resolution</dt>
+      <dd>1 hour</dd>
+    </dl>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="03">3. GSMaP Utilization</h2>
+    <p>JAXA/EORC provides GSMaP image/data in various format. Please refer to the following subsections for details.</p>
+    <p>In general, anyone wishing to publish any results using the data from the JAXA Global Rainfall Watch System should clearly acknowledge the ownership of the data in the publication (for example, ' Global Rainfall Map (GSMaP) by JAXA Global Rainfall Watch' was produced and distributed by the Earth Observation Research Center, Japan Aerospace Exploration Agency). Also, please check Terms of Use for details from <a href="https://sharaku.eorc.jaxa.jp/GSMaP/registration.html" target="_blank">here</a>. When you use the GSMaP rainfall products in papers, please cite the major papers listed in <a href="#10">Section 10</a>.</p>
+
+    <h2 id="03a">3.1. Monitor the rainfall using the JAXA Global Rainfall Watch website</h2>
+    <h4>&#9312; Quick explanation is here</h4>
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0JanK-fZMt4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style='margin-left:50px;'></iframe>
+    </p>
+    <br>
+
+    <h4>&#9313; Graph explanation is here</h4>
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VnxH7inZh6g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style='margin-left:50px;'></iframe>
+    </p>
+    <br>
+
+    <h4 id="03a3">&#9314; How to use the website “JAXA Climate Rainfall Watch”</h4>
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Jc0Z-o6fDPU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style='margin-left:50px;'></iframe>
+    </p>
+    <br>
+
+    <h4>&#9315; Displayed images and its data source</h4>
+    <p>
+    <ol style="list-style-type: upper-roman">
+      <li>Background cloud images use Globally-merged, full-resolution (~4km) IR Data, produced by NOAA Climate Prediction Center (CPC). Data uses infrared (IR) information observed by the geostationary satellites, including the Himawari satellite by the Japan Meteorological Agency (JMA), the GOES satellites by U.S. National Oceanic and Atmospheric Administration (NOAA), and the Meteosat satellites by the European Meteorological Satellites Organization (EUMETSAT). Those data are provided through NASA/GSFC Precipitation Processing System (PPS).</li>
+      <li>Black areas sometime shown in browse images indicate missing of cloud data on an irregular base by several reasons such as delay of data delivery or satellite operation status.</li>
+      <li>Since rainfall estimates are calculated mainly based on microwave radiometer observation, rainfall data will not be missing even if cloud image is missing in that pixel.</li>
+      <li>Coastline, lat/lon line, and river line are provided by <a href="http://www.naturalearthdata.com/" target="_blank">Natural Earth（http://www.naturalearthdata.com/)</a></li>
+    </ol>
+    </p>
+    
+    <h2 id="03b">3.2. Using Image of the GSMaP rainfall</h2>
+    <h4>&#9312; Displayed image in the website can be downloaded via website as png format. Please see <a href="#03a">here</a>.</h4>
+    <h4>&#9313; Global-scale image of GSMaP rainfall can be downloaded as jpg format from <a href="https://sharaku.eorc.jaxa.jp/GSMaP/archive/jpg/" target="_blank">here</a>.</h4>
+    <p style="text-align:center;">
+       <a href="img/gsmap_html_image.20191030.1200.jpg" target="_blank"><img src="img/sample_32e.jpg" alt="sample image (jpg)"></a>
+    </p>
+    <br>
+    <h4>&#9314; In addition, distribution website for high-resolution global-scale image of GSMaP rainfall is also ready. Please contact 
+
+<script type="text/javascript" language="javascript">
+<!--
+function mail_to2(i_1,i_2,i_3,i_4,i_5,i_6,i_7)
+{eval(String.fromCharCode(108,111,99,97,116,105,111,110,46,104,114,101,102,32,61,32,39,109,97,105,108,116,111,58)
+ + i_1 + String.fromCharCode(60,90,45,116,114,109,109,95,114,101,97,108,64,109,108,46,106,97,120,97,46,106,112,62,63,115,117,98,106,101,99,116,61)
+ + i_2 + String.fromCharCode(38,98,111,100,121,61)
+ + i_3 + "%0D%0A%0D%0A" 
+ + i_4 + "%0D%0A%0D%0A"
+ + i_5 + "%0D%0A"
+ + i_6 + "%0D%0A"
+ + i_7 + "%0D%0A" + "'");}
+document.write("<a href=JavaScript:mail_to2('TRMM_team','Request%20for%20the%20high-resolution%20GSMaP%20image','To:%20GSMaP%20Realtime%20Office','We/I%20need%20information%20to%20get%20the%20high-resolution%20GSMaP%20image.','Affiliation:','Name:','Purpose:')>us</a>");
+//-->
+</script>
+
+    .</h4>
+    <p style="text-align:center;">
+       <a href="img/gsmap_image.20191030.1200.5400x2700.png" target="_blank"><img src="img/sample_33e.png" alt="sample image for high-resolution ver. (png)"></a>
+    </p>
+    <br>
+
+    <h2 id="03c">3.3. Analyzing data</h2>
+    <p>GSMaP data in binary/csv format is freely available from password-protected ftp site.</p>
+    <p>Please register from <a href="./registration.html">here</a> to get data.</p>
+    <p>Data format description file is available from <a href="./faq/GSMaP_faq18.html" target="_blank">here</a> (PDF).</p>
+
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="04">4. Various GSMaP websites</h2>
+    <p>JAXA Rainfall Watch and related websites are linked each other.</p>
+
+        <ul class="mbar" style="margin-bottom: 0">
+          <img src="img/menubar/defo/GSMaP_HP_menubar_e_top.png" style="text-align: center;">
+        </ul>
+        <ul class="mbaren" style="margin-bottom: 0">
+          <img src="img/menubar/defo/GSMaP_HP_menubar_e_mid1.png">
+          <li2><a href="#04a" alt="Rainfall Watch"><img src="img/menubar/defo/GSMaP_HP_menubar_e_mid2.png"></a></li2>
+          <li3><a href="#04b" alt="GSMaP Realtime"><img src="img/menubar/defo/GSMaP_HP_menubar_e_mid3.png"></a></li3>
+          <li4><a href="#04c" alt="GSMaP Climate"><img src="img/menubar/defo/GSMaP_HP_menubar_e_mid4.png"></a></li4>
+          <li5><a href="#04d" alt="RIKEN Nowcast"><img src="img/menubar/defo/GSMaP_HP_menubar_e_mid5.png"></a></li5>
+          <li6><a href="https://www.eorc.jaxa.jp/theme/NEXRA/guide.htm" target="_blank" alt="Weather Realtime"><img src="img/menubar/defo/GSMaP_HP_menubar_e_mid6.png"></a></li6>
+          <img src="img/menubar/defo/GSMaP_HP_menubar_e_mid7.png">
+        </ul>
+        <ul class="mbar">
+          <img src="img/menubar/defo/GSMaP_HP_menubar_e_end_80.png" style="text-align: center;">
+        </ul>
+
+    <p>The period indicated by each accumulated rainfall (12h/ 24h/ 72h) is as shown in the table below.<br>
+       *In the case that the specified date is 2021/03/01 9:00 UTC.</p>
+
+    <table class="detailData2">
+      <tr>
+        <th> </th>
+        <th> Date </th>
+        <th> Period </th>
+      </tr><tr>
+        <th> 12h rainfall accumulation </th>
+        <td> 2021/3/1 9:00 - 9:59 </td>
+        <td> 2021/2/28 22:00 - 2021/3/1 9:59 </td>
+      </tr><tr>
+        <th> 24h rainfall accumulation </th>
+        <td> 2021/3/1 9:00 - 9:59 </td>
+        <td> 2021/2/28 10:00 - 2021/3/1 9:59 </td>
+      </tr><tr>
+        <th> 72h rainfall accumulation </th>
+        <td> 2021/3/1 9:00 - 9:59 </td>
+        <td> 2021/2/26 10:00 - 2021/3/1 9:59 </td>
+      </tr>
+    </table>
+
+    <h2 id="04a">4.1. JAXA Global Rainfall Watch</h2>
+    <p>The JAXA Global Rainfall Watch are available from March 2000 by using the combined MW-IR algorithm. The algorithms are different depending on the how long it is before from current hour, as shown in the following figure. The accuracy for past products is higher than its for realtime product. In addition, Gauge-adjusted version is also available. Please refer the following links.</p>
+    <p>
+      <ul>
+        <li><a href='/GSMaP/faq/GSMaP_faq01.html' target='_blank'>Various type and period</a></li>
+        <li><a href='http://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf' target='_blank'>Detail algorithm information</a></li>
+      </ul>
+    </p>
+    <p><a href='https://www.jss.jaxa.jp/en/' target='_blank'>JAXA Super Computer System (JSS2)</a> was used in processing of the reanalysis versions.</p>
+
+    <h2 id="04b">4.2. JAXA Realtime Rainfall Watch (GSMaP_NOW)</h2>
+    <p>The JAXA Realtime Raindall Watch website is mainly for monitoring current precipitation distribution. It provides the quasi-realtime precipitation information and is updated every 30 minutes.</p>
+    <p>GSMaP Realtime (GSMaP_NOW) had been provided within Asia-Pacific region (GEO-Himawari) since November 2015. The domain of it was extended to the Europe-Africa region (GEO-Meteosat) since November 2018, and then it has been available in whole globe including US region (GEO-GOES) since June 2019.</p>
+    <p>To provide rainfall data in real time, the data available only within 30 minutes is used. Please refer <a href='#05'>here</a> to the detail information for input data of GSMaP_NOW.</p>
+
+    <h2 id="04c">4.3. JAXA Climate Rainfall Watch (GSMaP_CLM)</h2>
+    <p>The JAXA Climate Rainfall Watch website provides statistical variables for daily, 3-days, pentad, weekly, 10-days and monthly including mean values and indices for extremes and drought. The product is also utilized for the Space-based Weather and Climate Extremes Monitoring Demonstration Project led by World meteorological Organization (WMO), and available since April 2000. Please have a look at the <a href="#03a3">video</a> showing how to use the website.</p>
+    <p>For detecting extreme rainfall, percentiles of rain rate are displayed. Darker color indicates more severe extreme rainfall. As for droughts, Standardized Precipitation Index (SPI) is used. If you hover the mouse cursor over the banner, detailed explanations are available. The statistics that can be displayed depend on the category, please refer the table below.</p>
+
+    <table class="detailData2">
+      <tr>
+        <th rowspan='2'> Category </th>
+        <th rowspan='2'> Mean<br>Precipitation </th>
+        <th rowspan='2'> Extreme<br>Rainfall </th>
+        <th rowspan='2'> Drought Index<br>(SPI) </th>
+        <th colspan='4'> Statistics </th>
+     </tr><tr>
+        <th> Climate<br>normals </th>
+        <th> % of<br>rainy days<br>in a month </th>
+        <th> Top 10%<br>precipitaion<br>intensity </th>
+        <th> Top 5%<br>precipitaion<br>intensity </th>
+      </tr><tr>
+        <th>Daily</th>
+        <td>〇</td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td>〇</td>
+      </tr><tr>
+        <th>3 days</th>
+        <td>〇</td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td>〇</td>
+      </tr><tr>
+        <th>Pentad</th>
+        <td>〇</td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td>〇</td>
+      </tr><tr>
+        <th>Weekly</th>
+        <td>〇</td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td>〇</td>
+      </tr><tr>
+        <th>10 days</th>
+        <td>〇</td>
+        <td></td>
+        <td></td>
+        <td>〇</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr><tr>
+        <th>Monthly</th>
+        <td>〇</td>
+        <td></td>
+        <td>〇</td>
+        <td>〇</td>
+        <td>〇</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p>In addition, for a specific latitude and longitude, click on "Time series graph & data" in the lower right corner of the screen, and then specify the latitude and longitude to download the csv.</p>
+
+    <p style="text-align:center;"><img src="img/gsmap_clm_csv_573x300.png"></p>
+
+    <p>Please see Tashima et al. (2020)（<a href='https://doi.org/10.1109/JSTARS.2020.3014881' target='_blank'>https://doi.org/10.1109/JSTARS.2020.3014881</a>）for details of extreme rainfall and drought monitoring using the near-real-time GSMaP product.</p>
+
+    <h2 id="04d">4.4. GSMaP RIKEN Nowcast (GSMaP_RNC)</h2>
+    <p>
+      This website provides precipitation forecasts 6 hours in advance using hourly-updated global precipitation data based on satellite observation. <br>
+      The RIKEN Data Assimilation Research Team (DA team) performs cutting-edge research on weather forecasting by integrating computer simulations and observation data. 
+      Based on an advanced data assimilation technique, we developed a precipitation nowcasting system* that provides precipitation forecasts. 
+      Operation of the nowcast system involves hourly updates and accuracy verification, and results are used for research purposes. <br>
+      JAXA distributes GSMaP RNC binary data generated by RIKEN. 
+      If you would like to get them, please register from <a href='/GSMaP/registration.html' target='_blank'>here</a>, which is same registration as other GSMaP product.
+    </p>
+
+    <h3>NO FORECAST area</h3>
+    <p>
+      We acquired the weather forecasting license from the Japan Meteorological Agency (JMA) for the area surrounding Japan defined by 0-60oN and 100-180oE, and provide the precipitation forecasts from 10 am to 5 pm on weekdays.
+      Areas on the map shaded in gray indicate out-of-service locations. 
+    </p>
+
+    <h3>Release note</h3>
+    <p>
+      Please note that the weather forecasts on this website can differ from weather forecasts provided by the JMA. Please give precedence to the latest warnings and advisories from the JMA. 
+      Use of information or data from this website is undertaken at the user's own risk.
+      JAXA and RIKEN takes no responsibility for any direct or indirect damage that may arise through the use of this information or data.
+      Any part or all of this website may be changed, deleted, or removed without notice.
+    </p><p>
+      More detail explanation and notes are available in RIKEN DA Team "<a href='https://weather.riken.jp/index_en.html' target='_blank'>GSMaP RIKEN nowcast (GSMaP_RNC)</a>".
+    </p><p>
+      *Reference<br>
+      1. Otsuka, S., S. Kotsuki, and T. Miyoshi, 2016: Nowcasting with data assimilation: a case of Global Satellite Mapping of Precipitation. Wea. Forecasting, 31, 1409-1416.
+    </p>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="05">5. Algorithm inputs</h2>
+    
+    <h3>1) Geostationary satellite data</h3>
+    
+    <p>
+	  In the GSMaP products except for the GSMaP_NOW, Globally-merged, full-resolution (~4km) IR Data, produced by NOAA/CPC, has been used. This IR data is merged from the ~11 micron IR channels from geostationary meteorological satellites of the Japan Meteorological Agency, the EUMETSAT, and the NOAA. The range of the latitude is 60N-60S. The temporal resolution is 1 hour in this product
+    </p><p>
+      As for <a href='#04a'>GSMaP Realtime (GSMaP_NOW)</a> , Himawari data from Japan Meteorological Agency, GOES data from the Chiba University and/or Instituto Nacional de Pesquisas Espaciais (INPE), and Meteosat data from EUMETSAT are used and merged to provide rainfall data in real time.
+    </p>
+
+    <h3>2) Low Earth Orbit satellite data</h3>
+    <p>
+      Because of the operational period of satellite and sensors, used satellite sensors are different depending on the data period. For the detail information, please refer to the satellite flag data.
+    </p><p>
+      As for <a href='#04a'>GSMaP Realtime (GSMaP_NOW)</a> , the data available within 30 minutes (GMI Core, data received at direct readout stations for GCOM-W, NOAA series, and MetOp series)  is used to provide rainfall data in real time.
+    <p>
+
+    <table class="detailData">
+      <tr>
+        <th> Satellite </th>
+        <th> Height (km)</th>
+        <th> Instrument </th>
+        <th> Category </th>
+        <th> frequency (GHz)</th>
+        <th> Note </th>
+      </tr>
+      <tr>
+        <th> GPM Core </th>
+        <td> 407 </td>
+        <td> GMI </td>
+        <td> imager </td>
+        <td> 10.7, 19.4, 21.3, 37, 85.5, 166, 183.31±3, 183.31±7 </td>
+        <td>Introduced into GSMaP<br />
+          since 2 Sep. 2014</td>
+      </tr>
+      <tr>
+        <th> TRMM </th>
+        <td> 402 </td>
+        <td> TMI </td>
+        <td> imager </td>
+        <td> 10,19,21,37,85 </td>
+        <td>Not operational since<br />
+          8 Apr. 2015</td>
+      </tr>
+
+
+      <tr>
+        <th> ADEOS-II </th>
+        <td> 803 </td>
+        <td> AMSR </td>
+        <td> imager </td>
+        <td> 7,10,19,24,37,89 </td>
+        <td>Not operational since<br />
+          25 Oct. 2003</td>
+      </tr>
+
+
+      <tr>
+        <th> AQUA </th>
+        <td> 705 </td>
+        <td> AMSR-E </td>
+        <td> imager </td>
+        <td> 7,10,19,24,37,89 </td>
+        <td>Not operational since<br />
+          4 Oct. 2011</td>
+      </tr>
+      <tr>
+        <th> GCOM-W </th>
+        <td> 705 </td>
+        <td> AMSR2 </td>
+        <td> imager </td>
+        <td> 7,10,19,24,37,89 </td>
+        <td>Introduced into GSMaP<br />
+          since 1 Jul. 2013</td>
+      </tr>
+
+
+      <tr>
+        <th> DMSP-F11 </th>
+        <td> 833 </td>
+        <td> SSM/I </td>
+        <td> imager </td>
+        <td> 19,22,37,85 </td>
+        <td>Not operational since<br />
+          17 May 2000</td>
+      </tr>
+
+
+      <tr>
+        <th> DMSP-F13 </th>
+        <td> 833 </td>
+        <td> SSM/I </td>
+        <td> imager </td>
+        <td> 19,22,37,85 </td>
+        <td>Not operational since<br />
+          18 Nov. 2009</td>
+      </tr>
+      <tr>
+        <th> DMSP-F14 </th>
+        <td> 833 </td>
+        <td> SSM/I </td>
+        <td> imager </td>
+        <td> 19,22,37,85 </td>
+        <td>Not operational since<br />
+          24 Aug. 2008</td>
+      </tr>
+      <tr>
+        <th> DMSP-F15 </th>
+        <td> 833 </td>
+        <td> SSM/I </td>
+        <td> imager </td>
+        <td> 19,22,37,85 </td>
+        <td>Only rain over the ocean has<br />
+          been used since Aug. 2006<br />
+          Not used since 2 Sep. 2014</td>
+      </tr>
+      <tr>
+        <th> DMSP-F16 </th>
+        <td> 833 </td>
+        <td> SSMIS </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>19.4, 22.2, 37, 91.7, 60-63,<br />
+          50-59, 150, 183.31±1,<br />
+          183.31±3, 183.31±7</td>
+        <td>Introduced into GSMaP<br />
+          since 11 Jun. 2010</td>
+      </tr>
+      <tr>
+        <th> DMSP-F17 </th>
+        <td> 850 </td>
+        <td> SSMIS </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>19.4, 22.2, 37, 91.7, 60-63,<br />
+          50-59, 150, 183.31±1,<br />
+          183.31±3, 183.31±7</td>
+        <td>Introduced into GSMaP<br />
+          since 11 Jun. 2010<br />
+		  Not used since 25 Jan. 2017</td>
+      </tr>
+      <tr>
+        <th> DMSP-F18 </th>
+        <td> 850 </td>
+        <td> SSMIS </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>19.4, 22.2, 37, 91.7, 60-63,<br />
+          50-59, 150, 183.31±1,<br />
+          183.31±3, 183.31±7</td>
+        <td>Introduced into GSMaP<br />
+          since 1 Jul. 2013</td>
+      </tr>
+      <tr>
+        <th> DMSP-F19 </th>
+        <td> 850 </td>
+        <td> SSMIS </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>19.4, 22.2, 37, 91.7, 60-63,<br />
+          50-59, 150, 183.31±1,<br />
+          183.31±3, 183.31±7</td>
+        <td>Introduced into GSMaP<br />
+          since 25 Mar. 2015<br />
+		  Not used since 11 Feb. 2016</td>
+      </tr>
+
+
+      <tr>
+        <th> NOAA-N15 </th>
+        <td> 833 </td>
+        <td> AMSU-A/B </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>23.8-89.0 (AMSU-A), 89,<br />
+          150, 183.31±1, 183.311±3,<br />
+          183.311±7 (AMSU-B)</td>
+        <td>Not operational since<br />
+          1 Oct. 2010</td>
+      </tr>
+      <tr>
+        <th> NOAA-N16 </th>
+        <td> 833 </td>
+        <td> AMSU-A/B </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>23.8-89.0 (AMSU-A), 89,<br />
+          150, 183.31±1, 183.311±3,<br />
+          183.311±7 (AMSU-B)</td>
+        <td>Not operational since<br />
+          1 Jan. 2008</td>
+      </tr>
+      <tr>
+        <th> NOAA-N17 </th>
+        <td> 833 </td>
+        <td> AMSU-A/B </td>
+        <td> imager/<br />
+          sounder </td>
+        <td>23.8-89.0 (AMSU-A), 89,<br />
+          150, 183.31±1, 183.311±3,<br />
+          183.311±7 (AMSU-B)</td>
+        <td>Not operational since<br />
+          1 Jan. 2010</td>
+      </tr>
+
+
+      <tr>
+        <th> NOAA-N18 </th>
+        <td> 870 </td>
+        <td> AMSU-A/<br />
+          MHS </td>
+        <td> sounder </td>
+        <td>23.8-89.1 (AMSU-A), 89,<br />
+          157, 183.311±3, 183.311±5,<br />
+          190.311 (MHS)</td>
+        <td>Introduced into GSMaP<br />
+          since 2 Sep. 2014<br />
+		  Low quality of data since 20 Oct. 2018<br />
+		  Not used since 23 Oct. 2018</td>
+      </tr>
+      <tr>
+        <th> NOAA-N19 </th>
+        <td> 870 </td>
+        <td> AMSU-A/<br />
+          MHS </td>
+        <td> sounder </td>
+        <td>23.8-89.1 (AMSU-A), 89,<br />
+          157, 183.311±3, 183.311±5,<br />
+          190.311 (MHS)</td>
+        <td>Introduced into GSMaP<br />
+          since 1 Aug. 2011</td>
+      </tr>
+      <tr>
+        <th height="70"> MetOp-A </th>
+        <td> 817 </td>
+        <td> AMSU-A/<br />
+          MHS </td>
+        <td> sounder </td>
+        <td>23.8-89.1 (AMSU-A), 89,<br />
+          157, 183.311±3, 183.311±5,<br />
+          190.311 (MHS)</td>
+        <td>Introduced into GSMaP<br />
+          since 1 Aug. 2011<br />
+		  Not used since 16 Dec. 2019</td>
+      </tr>
+      <tr>
+        <th height="70"> MetOp-B </th>
+        <td> 817 </td>
+        <td> AMSU-A/<br />
+          MHS </td>
+        <td> sounder </td>
+        <td>23.8-89.1 (AMSU-A), 89,<br />
+          157, 183.311±3, 183.311±5,<br />
+          190.311 (MHS)</td>
+        <td>Introduced into GSMaP<br />
+          since 2 Sep. 2014</td>
+      </tr>
+      <tr>
+        <th height="70"> MetOp-C </th>
+        <td> 817 </td>
+        <td> AMSU-A/<br />
+          MHS </td>
+        <td> sounder </td>
+        <td>23.8-89.1 (AMSU-A), 89,<br />
+          157, 183.311±3, 183.311±5,<br />
+          190.311 (MHS)</td>
+        <td>Introduced into GSMaP<br />
+          since 17 Sep. 2020</td>
+      </tr>
+    </table>
+    
+    <h3>3) Ancillary Data</h3>
+    
+    <ul>
+      <li>JMA Global Forecast data, and Global Analysis (GANAL) data</li>
+      <li>JMA Merged satellite and in situ data Global Daily Sea Surface Temperatures (MGDSST)</li>
+    </ul>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="06">6. FAQ</h2>
+    <p>Regarding the use of GSMaP data, we have gathered frequently asked questions in the list.</p>
+
+    <ol class="linkList" style='list-style:none;'>
+      <li id='No001'>Q1.　<a href='./faq/GSMaP_faq01.html'>I want to know about the type and period of available GSMaP product.</a></li>
+      <li id='No002'>Q2.　<a href='./faq/GSMaP_faq02.html'>I want to know the specific area of the text data (.csv).</a></li>
+      <li id='No003'>Q3.　<a href='./faq/GSMaP_faq03.html'>I want to know about the detail (parameter, data format, etc.) of the product.</a></li>
+      <li id='No004'>Q4.　<a href='./faq/GSMaP_faq04.html'>I want to know the unit of daily rainfall. /I want to know how to get the daily rainfall data.</a></li>
+      <li id='No005'>Q5.　<a href='./faq/GSMaP_faq05.html'>What does "01:00Z" mean?</a></li>
+      <li id='No006'>Q6.　<a href='./faq/GSMaP_faq06.html'>I want to know about the difference between the products (GSMaP_NOW, GSMaP_NRT, GSMaP_MVK, GSMaP_RNL, GSMaP_Gauge_NRT, GSMaP_Gauge, GSMaP_Gauge_RNL).</a></li>
+      <li id='No007'>Q7.　<a href='./faq/GSMaP_faq07.html'>I want to know what geodetic reference system used to GSMaP.</a></li>
+      <li id='No008'>Q8.　<a href='./faq/GSMaP_faq08.html'>I forgot my user ID, password, URL, so please re-issue it.</a></li>
+      <li id='No009'>Q9.　<a href='./faq/GSMaP_faq09.html'>I am using the correct user ID and password, but I can not access GSMaP.</a></li>
+      <li id='No010'>Q10. <a href='./faq/GSMaP_faq10.html'>I want to know how to open the data with ArcGIS.</a></li>
+      <li id='No011'>Q11. <a href='./faq/GSMaP_faq11.html'>I want to know how to open the data. /Can you recommend any software to view/visualize the data?</a></li>
+      <li id='No012'>Q12. <a href='./faq/GSMaP_faq12.html'>I want to know how to read the data with GrADS, and how to use ".ctl" files.</a></li>
+      <li id='No013'>Q13. <a href='./faq/GSMaP_faq13.html'>Is it possible to use JAXA Global Rainfall Image on my academic research report?</a></li>
+      <li id='No014'>Q14. <a href='./faq/GSMaP_faq14.html'>Is it possible to use JAXA Global Rainfall Image for commercial use?</a></li>
+      <li id='No015'>Q15. <a href='./faq/GSMaP_faq15.html'>I want to know the algorithm used for the GSMaP.</a></li>
+      <li id='No016'>Q16. <a href='./faq/GSMaP_faq16.html'>I want to use GSMaP data on our web.  What is the necessary procedure?</a></li>
+      <li id='No017'>Q17. <a href='./faq/GSMaP_faq17.html'>What data is GSMaP_RNC?</a></li>
+      <li id='No018'>Q18. <a href='./faq/GSMaP_faq18.html'>Can I get Data Format Description?</a></li>
+      <li id='No019'>Q19. <a href='./faq/GSMaP_faq19.html'>I want to download only specific area.</a></li>
+      <li id='No020'>Q20. <a href='./faq/GSMaP_faq20.html'>I want to know the difference from the GSMaP data provided from G-Portal.</a></li>
+
+    </ol>
+    <h2 id="07">7. Some caveats for data users</h2>
+    
+    <ul>
+      <li>Although JAXA/EORC has taken every care to manage the current site, JAXA assumes no responsibility regarding the safety of the contents of the Site or the reliability of information provided on the Site. JAXA is not responsible to you for any damage that may be caused by the use of the Site and/or the information on the Site.</li>
+      <li>Please contact  
+      
+<script type="text/javascript" language="javascript">
+<!--
+function mail_to(i_1,i_2)
+{eval(String.fromCharCode(108,111,99,97,116,105,111,110,46,104,114,101,102,32,61,32,39,109,97,105,108,116,111,58)
+ + i_1 + String.fromCharCode(60,90,45,116,114,109,109,95,114,101,97,108,64,109,108,46,106,97,120,97,46,106,112,62,63,115,117,98,106,101,99,116,61)
+ + i_2 + "'");}
+document.write("<a href=JavaScript:mail_to('TRMM_team','GSMaP_HP')>the GSMaP realtime office</a>");
+//-->
+</script>
+<noscript>
+the GSMaP realtime office&nbsp;(<img src='img/mail.png' border='0' class='inlineImg' />&nbsp;)
+</noscript>
+      
+      in advance if you want to distribute images or data from this site to many people, such as in a pamphlet or internet. Also, please check Terms of Use for details from <a href="https://sharaku.eorc.jaxa.jp/GSMaP/registration.html" target="_blank">here</a>.</li>
+      <li>Anyone wishing to publish any results using the data from the JAXA Global Rainfall Watch System should clearly acknowledge the ownership of the data in the publication (for example, ' Global Rainfall Map (GSMaP) by JAXA Global Rainfall Watch' was produced and distributed by the Earth Observation Research Center, Japan Aerospace Exploration Agency). If you have benefited from GSMaP rainfall products, please cite the major papers listed in <a href="#10">Section 10</a>.</li>
+      <li>We would appreciate receiving a preprint and/or reprint of publications in which you utilize our data. Relevant publications should be sent to :</li>
+      </ul>
+      
+    <p>GSMaP Real-Time Office Earth Observation Research Center, Japan Aerospace Exploration Agency<br />
+      2-1-1, Sengen, Tsukuba-city, Ibaraki 305-8505 Japan<br />
+      Fax +81-29-868-2961<br />
+      E-mail: 
+      
+      
+<script type="text/javascript" language="javascript">
+<!--
+function mail_to(i_1,i_2)
+{eval(String.fromCharCode(108,111,99,97,116,105,111,110,46,104,114,101,102,32,61,32,39,109,97,105,108,116,111,58)
+ + i_1 + String.fromCharCode(60,90,45,116,114,109,109,95,114,101,97,108,64,109,108,46,106,97,120,97,46,106,112,62,63,115,117,98,106,101,99,116,61)
+ + i_2 + "'");}
+document.write("<a href=JavaScript:mail_to('TRMM_team','GSMaP_HP')><img src='img/mail.png' border='0' class='inlineImg' /></a>");
+//-->
+</script>
+<noscript>
+<img src="img/mail.png" class="inlineImg" />
+</noscript>
+</p>
+      
+      
+      
+    <p>Please contact us at the 
+    
+    
+<script type="text/javascript" language="javascript">
+function mail_to(i_1,i_2)
+{eval(String.fromCharCode(108,111,99,97,116,105,111,110,46,104,114,101,102,32,61,32,39,109,97,105,108,116,111,58)
+ + i_1 + String.fromCharCode(60,90,45,116,114,109,109,95,114,101,97,108,64,109,108,46,106,97,120,97,46,106,112,62,63,115,117,98,106,101,99,116,61)
+ + i_2 + "'");}
+document.write("<a href=JavaScript:mail_to('TRMM_team','GSMaP_HP')>GSMaP Real-Time Office</a>");
+//-->
+</script>
+<noscript>
+GSMaP Real-Time Office&nbsp;(<img src='img/mail.png' border='0' class='inlineImg' />&nbsp;)
+</noscript>
+    
+    
+    if you have any questions.</p>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="08">8. Links</h2>
+    
+    <ul>
+      <li>JAXA/EORC GPM Website<br />
+        <a href="http://www.eorc.jaxa.jp/GPM/index_e.htm" target="_blank">http://www.eorc.jaxa.jp/GPM/index_e.htm</a></li>
+      <li>JAXA/EORC TRMM Website<br />
+        <a href="http://www.eorc.jaxa.jp/TRMM/index_e.htm" target="_blank">http://www.eorc.jaxa.jp/TRMM/index_e.htm</a></li>
+      <li>JAXA/EORC AMSR/AMSR-E Website<br />
+        <a href="http://sharaku.eorc.jaxa.jp/AMSR/index.html" target="_blank">http://sharaku.eorc.jaxa.jp/AMSR/index.html</a></li>
+      <li>JAXA/EORC GCOM-W Website<br />
+        <a href="http://suzaku.eorc.jaxa.jp/GCOM_W/index.html" target="_blank">http://suzaku.eorc.jaxa.jp/GCOM_W/index.html</a></li>
+      </ul>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="09">9. Acknowledgments</h2>
+    
+    <p>The GSMaP and JAXA Global Rainfall Watch system was developed based on heritage of the GSMaP Project led by Prof. K. Okamoto (Osaka Prefecture University, Osaka, Japan) under R&amp;D of Hydrological Modeling and Water Resources System in the Core Research for Evolutional Science and Technology program of the Japan Science and Technology Agency (JST). We would like to thank JST and the members of the GSMaP Project.</p>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+    <h2 id="10">10. Papers describing the GSMaP project</h2>
+
+    <h3>Please refer the following paper :</h3>
+    <ul>
+      <li>Kubota, T., K. Aonashi, T. Ushio, S. Shige, Y. N. Takayabu, M. Kachi, Y. Arai, T. Tashima, T. Masaki, N. Kawamoto, T. Mega, M. K. Yamamoto, A. Hamada, M. Yamaji, G. Liu and R. Oki 2020: Global Satellite Mapping of Precipitation (GSMaP) products in the GPM era, Satellite precipitation measurement, Springer, <a href="https://doi.org/10.1007/978-3-030-24568-9_20" target="_blank">https://doi.org/10.1007/978-3-030-24568-9_20</a>.</li>
+    </ul>    
+
+    <h3>Major papers related to GSMaP algorithms :</h3>
+    <ul>
+      <li>Kubota, T., S. Shige, H. Hashizume, K. Aonashi, N. Takahashi, S. Seto, M. Hirose, Y. N. Takayabu, K. Nakagawa, K. Iwanami, T. Ushio, M. Kachi, and K. Okamoto, 2007: Global Precipitation Map using Satelliteborne Microwave Radiometers by the GSMaP Project : Production and Validation, IEEE Trans. Geosci. Remote Sens., 45, No. 7, 2259-2275, <a href="https://doi.org/10.1109/TGRS.2007.895337" target="_blank">https://doi.org/10.1109/TGRS.2007.895337</a>.</li>
+      <li>Aonashi, K., J. Awaka, M. Hirose, T. Kozu, T. Kubota, G. Liu, S. Shige, S., Kida, S. Seto, N.Takahashi, and Y. N. Takayabu, 2009: GSMaP passive, microwave precipitation retrieval algorithm: Algorithm description and validation. J. Meteor. Soc. Japan, 87A, 119-136, <a href="https://doi.org/10.2151/jmsj.87A.119" target="_blank">https://doi.org/10.2151/jmsj.87A.119</a>.</li>
+      <li>T. Ushio, T. Kubota, S. Shige, K. Okamoto, K. Aonashi, T. Inoue, N., Takahashi, T. Iguchi, M.Kachi, R. Oki, T. Morimoto, and Z. Kawasaki, 2009: A Kalman filter approach to the Global Satellite Mapping of Precipitation (GSMaP) from combined passive microwave and infrared radiometric data. J. Meteor. Soc. Japan, 87A, 137-151, <a href="https://doi.org/10.2151/jmsj.87A.137" target="_blank">https://doi.org/10.2151/jmsj.87A.137</a>.</li>
+      <li>Mega, T., T. Ushio, M. T. Matsuda, T. Kubota, M. Kachi, and R. Oki, 2019: Gauge-adjusted global satellite mapping of precipitation. IEEE Trans. Geosci. Remote Sens., 57.4, 1928-1935, <a href="https://doi.org/10.1109/TGRS.2018.2870199" target="_blank">https://doi.org/10.1109/TGRS.2018.2870199</a>.</li>
+    </ul>
+
+    <h3>Major papers related to heavy rainfall and drought monitoring using the GSMaP products :</h3>
+    <ul>
+      <li>T. Tashima, T. Kubota, T. Mega, and T. Ushio, and R. Oki, 2020: Precipitation extremes monitoring using the near-real-time GSMaP product, IEEE J. Sel. Topics Appl. Earth Observ. Remote Sens. <a href="https://doi.org/10.1109/JSTARS.2020.3014881" target="_blank">https://doi.org/10.1109/JSTARS.2020.3014881</a>.</li>
+    </ul>
+
+    <p>Further references are listed <a href="./document/References.pdf" target="_blank">here</a>.</p>
+      
+    <p class="goPageTop"><a href="#">Page Top ▲</a></p>
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!-- ****************フッタ**************** -->
+<div id="footerWrapper">
+  <div id="footer">
+  
+  <ul id="logo">
+    <li><a href="http://www.jaxa.jp/" target="_blank"><img src="img/logo_JAXA.png" alt="JAXA" /></a></li>
+    <li><a href="http://www.eorc.jaxa.jp/" target="_blank"><img src="img/logo_EORC.png" alt="EORC" /></a></li>
+  </ul>  
+  <address>
+    <a href="http://www.jaxa.jp/" target="_blank"> Japan Aerospace Exploration Agency</a>&nbsp;/&nbsp;
+    <a href="http://www.eorc.jaxa.jp/" target="_blank">Earth Observation Research Center</a><br />
+    <span class="copy">Copyright&copy; Japan Aerospace Exploration Agency, Earth Observation Research Center</span>
+  </address>
+    
+  <div id="caution"></div>
+    
+    <ul id="footerLink">
+      
+	<script type="text/javascript" language="javascript">
+    <!--
+    function mail_to(i_1,i_2)
+    {eval(String.fromCharCode(108,111,99,97,116,105,111,110,46,104,114,101,102,32,61,32,39,109,97,105,108,116,111,58)
+     + i_1 + String.fromCharCode(60,90,45,116,114,109,109,95,114,101,97,108,64,109,108,46,106,97,120,97,46,106,112,62,63,115,117,98,106,101,99,116,61)
+     + i_2 + "'");}
+    document.write("<li><a href=JavaScript:mail_to('TRMM_team','GSMaP_HP')>Contact Us</a></li>");
+    //-->
+    </script>
+    <noscript>
+      <img src="img/mail_forFooter.png" />
+    </noscript>
+      
+    </ul>
+    
+  </div>
+</div>
+</body>
+</html>
+
